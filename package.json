@@ -1,0 +1,27 @@
+{
+  "name": "LoginForm-Nodejs-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farrukh191/LoginForm-Nodejs-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farrukh191/LoginForm-Nodejs-/issues"
+  },
+  "homepage": "https://github.com/farrukh191/LoginForm-Nodejs-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12"
+  }
+}
