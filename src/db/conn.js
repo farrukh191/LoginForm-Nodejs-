@@ -10,4 +10,5 @@ mongoose.connect("mongodb://localhost:27017/loginform",{
 }).catch((err)=>{
     console.log(err);
 })
-// connection
+// connection 
+// make connection of database
