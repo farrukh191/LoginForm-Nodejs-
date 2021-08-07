@@ -21,6 +21,7 @@
   "homepage": "https://github.com/farrukh191/LoginForm-Nodejs-#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
     "jsonwebtoken": "^8.5.1",
