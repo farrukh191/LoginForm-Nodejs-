@@ -50,7 +50,10 @@ const employeeSchema = new mongoose.Schema({
 employeeSchema.methods.generateAuthToken = async function(){
     try {
         console.log(this._id);
-        const token = jwt.sign({_id:this._id.toString()}, "mynameisfarrukhferoziamfullstackwebdevloper");
+        // const token = jwt.sign({_id:this._id.toString()}, "mynameisfarrukhferoziamfullstackwebdevloper");
+        // secret key direct islye m yha nhi likh rha ho jb bhi host kronga to secret key chori hone ka dr h tu iske
+        // lye .env file create krta ho or wha ja kr secret key derha ho or npm i dotenv package install krha ho
+        const token = jwt.sign({_id:this._id.toString()}, process.env.SECRET_KEY);
         this.tokens = this.tokens.concat({tokenn : token});
         await this.save();
         return token;

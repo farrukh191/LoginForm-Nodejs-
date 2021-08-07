@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const app = express();
@@ -6,6 +7,8 @@ require('./db/conn');
 const Register = require("./models/register");
 const hbs = require("hbs");
 const jwt = require("jsonwebtoken");
+
+//console.log(process.env.SECRET_KEY);
 
 //get the data from input field
 
